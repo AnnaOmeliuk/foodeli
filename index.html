@@ -6,10 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@700&family=Lobster+Two:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main.css"/>
+
+    <link rel="stylesheet" href="./main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
           <div class="nav__logo">
             <a href="" class="nav__logo-link">
               <svg class="nav__logo-icon" width="45" height="45">
-                <use xlink:href="./svg/logo.svg"></use>
+                <use xlink:href="/svg/logo.svg"></use>
               </svg>
               <p class="nav__logo-title">Foodeli</p>
             </a>
@@ -52,7 +53,9 @@
             </a>
 
             <button type="button" class="nav__button nav__button--login">
-              <i class="fa-solid fa-right-to-bracket nav__icon nav__icon--login"></i>
+              <i
+                class="fa-solid fa-right-to-bracket nav__icon nav__icon--login"
+              ></i>
               Login
             </button>
           </div>
@@ -65,20 +68,20 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero container">
         <div class="hero__content">
           <button class="hero__button">
-            More than faster
+            More than Faster
             <svg class="hero__svg">
-              <use xlink:href="./svg/сherry.svg"></use>
+              <use xlink:href="/svg/сherry.svg"></use>
             </svg>
           </button>
 
-          <h2 class="hero__title">
+          <h1 class="hero__title">
             Claim Best Offer on Fast
             <span class="hero__title--accent">Food</span> &
             <span class="hero__title--accent">Restaurants</span>
-          </h2>
+          </h1>
           <p class="hero__subtitle">
             Our job is to filling your tummy with delicious food and with fast
             and free delivery
@@ -88,13 +91,15 @@
               Get Started
             </button>
             <button class="hero__button hero__button--video" type="button">
-              <i class="fa-solid fa-play hero__button-icon"></i>
+              <span class="hero__button-icon"
+                ><i class="fa-solid fa-play"></i
+              ></span>
               Watch Video
             </button>
           </div>
         </div>
         <div class="hero__image">
-          <img src="./img/hero-img.png" alt="plate-1" class="hero__image-img">
+          <img src="./img/hero-img.png" alt="plate-1" class="hero__image-img" />
         </div>
       </section>
     </main>
