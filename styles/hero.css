@@ -113,7 +113,7 @@
     overflow: hidden;
   }
 
-  .hero__image-icon {
+  .hero__image-icon-clock {
     position: absolute;
     top: 4%;
     left: 4%;
@@ -128,10 +128,24 @@
     z-index: 1;
   }
 
-   .hero__image-icon i {
+  .hero__image-icon-clock i {
     color: #fff;
     font-size: 48px;
-   }
+  }
+
+  .hero__image-icon-fire {
+    position: absolute;
+    top: 0;
+    left: 88%;
+    z-index: 1;
+  }
+
+  .hero__image-icon-arrow {
+    position: absolute;
+    top: 0;
+    left: 88%;
+    z-index: 1;
+  }
 
   .hero__title--accent {
     font-size: 80px;
@@ -154,6 +168,14 @@
     align-items: center;
     color: #333333;
   }
+
+  .hero__image-icon-arrow {
+    rotate: 91deg;
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -171,4 +193,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero__image-icon-arrow {
+    position: absolute;
+    top: 16%;
+    left: 87%;
+    z-index: 1;
+    rotate: 12deg;
+  }
 }
