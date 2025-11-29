@@ -51,7 +51,7 @@ a {
   margin: 0 auto;
 }
 
-/*  */
+/* ----------nav---------- */
 
 .nav {
   display: flex;
@@ -135,18 +135,23 @@ a {
  font-size: 24px;
 }
 
+/* ----------end nav---------- */
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 20px;
     max-width: 768px;
     margin: 0 auto;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
+
+  /* ----------nav---------- */
   .nav__menu {
     display: flex;
   }
@@ -159,9 +164,11 @@ a {
   .nav__burger{
     display: none;
   }
+    /* ----------end nav---------- */
 }
 
 @media screen and (min-width: 1440px) {
+  
   .container {
     padding: 0 28px;
     max-width: 1440px;
