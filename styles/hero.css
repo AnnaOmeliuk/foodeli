@@ -83,6 +83,10 @@
   overflow: hidden;
 }
 
+.hero__image-action {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .hero__content {
     max-width: 50%;
@@ -175,6 +179,49 @@
     top: 13%;
     left: 18%;
     z-index: 1;
+  }
+
+  .hero__image-action {
+    display: flex;
+    position: absolute;
+    bottom: 18%;
+    left: 0;
+    z-index: 1;
+    width: 323px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+  }
+  .hero__image-action-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+  .hero__image-action-icon--user {
+    background-color: #fee9de;
+    margin-right: 24px;
+  }
+  .hero__image-action-icon-svg {
+  }
+  .hero__image-action-info {
+  }
+  .hero__image-action-title {
+  }
+  .hero__image-action-subtitle {
+    font-size: 12px;
+  }
+  .hero__image-action-icon--phone {
+    background-color: #eb0029;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+  .fa-solid {
+  }
+  .fa-phone {
   }
 }
 
