@@ -69,6 +69,7 @@
 
     <main>
       <section class="hero container">
+        <!-- left part -->
         <div class="hero__content">
           <button class="hero__button">
             More than Faster
@@ -97,7 +98,43 @@
               Watch Video
             </button>
           </div>
+          <!-- customers -->
+        <div class="hero__customers">
+          <div class="hero__customers-list">
+            <img
+              src="/img/user-1.jpg"
+              alt="customer 1"
+              class="hero__customers-item"
+            />
+            <img
+              src="/img/user-2.jpg"
+              alt="customer 2"
+              class="hero__customers-item"
+            />
+            <img
+              src="/img/user-3.jpg"
+              alt="customer 3"
+              class="hero__customers-item"
+            />
+          </div>
+          <div class="hero__customers-info">
+            <h3 class="hero__customers-title">Our Happy Customer</h3>
+            <div class="hero__customers-rating">
+              <i
+                class="fa-solid fa-star icon-star icon-star--active"
+              ></i>
+              <p class="hero__customers-rating-value">
+                4,8<span
+                  class="hero__customers-rating-value hero__customers-rating-value--overview"
+                  >(12.5k Review)</span
+                >
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- end-customers -->
+        </div>
+        <!-- right part -->
         <div class="hero__image">
           <span class="hero__image-icon-clock">
             <i class="fa-regular fa-clock"></i>
@@ -123,11 +160,12 @@
               <h3 class="hero__image-action-title">Richard Watson</h3>
               <p class="hero__image-action-subtitle">Food Courier</p>
             </div>
-            <span
+            <button
+              type="button"
               class="hero__image-action-icon hero__image-action-icon--phone"
             >
               <i class="fa-solid fa-phone"></i>
-            </span>
+            </button>
           </div>
 
           <div class="hero__image-rating">
@@ -141,40 +179,42 @@
               <ul class="hero__image-info-list">
                 <li class="hero__image-info-item">
                   <i
-                    class="fa-solid fa-star hero__image-info-icon hero__image-info-icon--active"
+                    class="fa-solid fa-star icon-star icon-star--active"
                   ></i>
                 </li>
                 <li class="hero__image-info-item">
                   <i
-                    class="fa-solid fa-star hero__image-info-icon hero__image-info-icon--active"
+                    class="fa-solid fa-star icon-star icon-star--active"
                   ></i>
                 </li>
                 <li class="hero__image-info-item">
                   <i
-                    class="fa-solid fa-star hero__image-info-icon hero__image-info-icon--active"
+                    class="fa-solid fa-star icon-star icon-star--active"
                   ></i>
                 </li>
                 <li class="hero__image-info-item">
                   <i
-                    class="fa-solid fa-star hero__image-info-icon hero__image-info-icon--active"
+                    class="fa-solid fa-star icon-star icon-star--active"
                   ></i>
                 </li>
                 <li class="hero__image-info-item">
                   <i
-                    class="fa-regular fa-star hero__image-info-icon hero__image-info-icon--inactive"
+                    class="fa-regular fa-star icon-star icon-star--inactive"
                   ></i>
                 </li>
               </ul>
 
               <p class="hero__image-info-price">
-                <span class="hero__image-info-price-accent">$</span>7.49
+                <span class="hero__image-info-price hero__image-info-price--accent">$</span>7.49
               </p>
             </div>
           </div>
 
           <img src="./img/hero-img.png" alt="plate-1" class="hero__image-img" />
         </div>
+ 
       </section>
+             
     </main>
 
     <footer></footer>

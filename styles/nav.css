@@ -83,12 +83,14 @@
 
 @media screen and (min-width: 768px) {
   .nav {
-
-  padding: 40px 0;
+  padding: 20px 0;
 }
 }
 
 @media screen and (min-width: 1024px) {
+    .nav {
+  padding: 30px 0;
+}
   .nav__menu {
     display: flex;
   }

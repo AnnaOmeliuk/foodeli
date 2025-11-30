@@ -1,11 +1,8 @@
-/* ----------container---------- */
-
 .container {
   padding: 0 12px;
   max-width: 425px;
   margin: 0 auto;
 }
-
 
 @media screen and (min-width: 768px) {
   .container {
@@ -29,4 +26,14 @@
     max-width: 1440px;
   }
 }
-/* ----------end-container---------- */
+
+  .icon-star {
+    color: #f2c94c;
+  }
+
+  .icon-star--active {
+  }
+
+  .icon-star--inactive {
+    color: #f2c94c;
+  }
