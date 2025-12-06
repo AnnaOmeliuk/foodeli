@@ -1,0 +1,78 @@
+.menu {
+}
+.container {
+}
+.menu__info {
+}
+.menu__subtitle {
+  color: #eb0029;
+  font-weight: 600;
+  font-size: 18px;
+}
+.menu__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2;
+  max-width: 514px;
+}
+.menu__container {
+  display: flex;
+}
+.menu__list {
+  max-height: 574px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  overflow-y: auto;
+}
+.menu__item {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.menu__icon {
+  width: 30px;
+  height: 30px;
+}
+.menu__item-name {
+  font-size: 24px;
+}
+.swiper {
+  width: 50%;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.menu-card {
+  height: 436px;
+  width: 508px;
+  background-image: url(/img/menu/pizza/pizza-1.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.menu-card__title {
+}
+.menu-card__price {
+}
+.menu-card__price-currency {
+}
+.menu-card__action {
+}
+.fa-solid {
+}
+.fa-angle-right {
+}
+.menu-card__action-icon {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}

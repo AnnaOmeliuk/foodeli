@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@700&family=Lobster+Two:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./main.css" />
     <title>Document</title>
   </head>
@@ -134,15 +138,15 @@
         </div>
         <!-- right part -->
         <div class="hero__image">
-          <span class="hero__image-icon-clock">
+          <span class="hero__image-icon hero__image-icon--clock">
             <i class="fa-regular fa-clock"></i>
           </span>
-          <span class="hero__image-icon-fire">
+          <span class="hero__image-icon hero__image-icon--fire">
             <svg>
               <use xlink:href="/svg/fire.svg"></use>
             </svg>
           </span>
-          <span class="hero__image-icon-arrow">
+          <span class="hero__image-icon hero__image-icon--arrow">
             <svg>
               <use xlink:href="/svg/arrow.svg"></use>
             </svg>
@@ -252,6 +256,149 @@
           </li>
         </ul>
       </section>
+
+      <section class="menu container">
+        <div class="menu__info">
+          <p class="menu__subtitle">OUR MENU</p>
+          <h2 class="menu__title">Menu That Always Makes You Fall In Love</h2>
+        </div>
+
+        <div class="menu__container">
+                  <ul class="menu__list">
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-burger.svg"></use>
+            </svg>
+            <p class="menu__item-name">Burger</p>
+          </li>
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-pizza.svg"></use>
+            </svg>
+            <p class="menu__item-name">Pizza</p>
+          </li>
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-sushi.svg"></use>
+            </svg>
+            <p class="menu__item-name">Sushi</p>
+          </li>
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-pasta.svg"></use>
+            </svg>
+            <p class="menu__item-name">Pasta</p>
+          </li>
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-ramen.svg"></use>
+            </svg>
+            <p class="menu__item-name">Ramen</p>
+          </li>
+
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-salad.svg"></use>
+            </svg>
+            <p class="menu__item-name">Salad</p>
+          </li>
+
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-cupcake.svg"></use>
+            </svg>
+            <p class="menu__item-name">Cupcake</p>
+          </li>
+          <li class="menu__item">
+            <svg class="menu__icon">
+              <use xlink:href="./svg/menu-ice-cream.svg"></use>
+            </svg>
+            <p class="menu__item-name">Ice Cream</p>
+          </li>
+        </ul>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="menu-card">
+                <h3 class="menu-card__title">Italian Pizza</h3>
+                <p class="menu-card__price">
+                  <span class="menu-card__price-currency">$</span>7.49
+                </p>
+                <button class="menu-card__action">
+                  <i class="fa-solid fa-angle-right menu-card__action-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        </div>
+
+      </section>
     </main>
 
     <footer></footer>
@@ -262,5 +409,8 @@
       src="https://kit.fontawesome.com/65e0dad21f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   </body>
 </html>
