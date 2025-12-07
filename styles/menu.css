@@ -3,11 +3,13 @@
 .container {
 }
 .menu__info {
+  margin-bottom: 32px;
 }
 .menu__subtitle {
   color: #eb0029;
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 .menu__title {
   font-family: "Rubik", sans-serif;
@@ -18,43 +20,147 @@
 }
 .menu__container {
   display: flex;
+  gap: 80px;
 }
 .menu__list {
   max-height: 574px;
-  width: 320px;
   display: flex;
+  flex: 0 0 340px;
   flex-direction: column;
-  gap: 100px;
+  gap: 40px;
   overflow-y: auto;
 }
-.menu__item {
+
+/* scroll style */
+
+/* Ширина смуги прокрутки */
+.menu__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Доріжка */
+.menu__list::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+/* Повзунок */
+.menu__list::-webkit-scrollbar-thumb {
+  background: #eb0029;
+  border-radius: 10px;
+}
+
+/* Ховер */
+.menu__list::-webkit-scrollbar-thumb:hover {
+  background: #c00020;
+}
+
+/* Firefox */
+.menu__list {
+  scrollbar-width: thin;
+  scrollbar-color: #eb0029 #f4f4f4;
+}
+
+/* end scroll style */
+
+.menu__link {
   display: flex;
+  align-items: center;
   gap: 40px;
+  padding: 24px;
+  max-width: 264px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.menu__icon-wrap {
+  display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
+
+.menu__icon-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;    
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: 0.3s ease;
+  z-index: 0;
+}
+
+.menu__icon {
+  position: relative;
+  z-index: 1;
+}
+
+.menu__link:hover .menu__icon-wrap::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.menu__link:hover {
+  background-color: #eb0029;
+  color: #fff;
+}
+
 .menu__icon {
   width: 30px;
   height: 30px;
+  z-index: 1;
 }
 .menu__item-name {
   font-size: 24px;
 }
 .swiper {
-  width: 50%;
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
 }
 .swiper-wrapper {
+  display: flex;
 }
 .swiper-slide {
 }
 .menu-card {
-  height: 436px;
-  width: 508px;
-  background-image: url(/img/menu/pizza/pizza-1.jpg);
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
+  height: 508px;
+  width: 436px;
+  position: relative;
   border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+.menu-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+.menu-card__img {
+  height: 508px;
+  width: 436px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-card__info {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .menu-card__title {
 }
