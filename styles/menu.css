@@ -5,7 +5,7 @@
 .container {
 }
 .menu__info {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   position: relative;
 }
 .menu__subtitle {
@@ -17,20 +17,20 @@
 .menu__title {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 36px;
   line-height: 1.2;
   max-width: 514px;
 }
 .menu__container {
   display: flex;
-  gap: 80px;
+  gap: 20px;
 }
 .menu__list {
-  max-height: 574px;
+  max-height: 300px;
   display: flex;
-  flex: 0 0 340px;
+  flex: 0 0 300px;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   overflow-y: auto;
 }
 
@@ -69,8 +69,8 @@
 .menu__link {
   display: flex;
   align-items: center;
-  gap: 40px;
-  padding: 24px;
+  gap: 24px;
+  padding: 12px;
   max-width: 264px;
   border-radius: 50px;
   position: relative;
@@ -121,7 +121,6 @@
   font-size: 24px;
 }
 .swiper {
-  /* overflow: hidden; */
   flex: 1;
   min-width: 0;
 }
@@ -204,7 +203,8 @@
   justify-content: flex-end;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,4 +219,42 @@
 .swiper-button-next:hover {
   color: #fff;
   background-color: #eb0029;
+}
+
+@media screen and (min-width: 768px) {
+.menu__list {
+  max-height: 574px;
+
+  flex: 0 0 340px;
+
+  gap: 40px;
+
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+.menu__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2;
+  max-width: 514px;
+}
+
+.menu__container {
+  display: flex;
+  gap: 80px;
+}
+
+.menu__info {
+    margin-bottom: 60px;
+}
+
+
+.menu__link {
+  gap: 40px;
+  padding: 24px;
+
+}
 }
