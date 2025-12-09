@@ -22,8 +22,6 @@
   max-width: 514px;
 }
 .menu__container {
-  display: flex;
-  gap: 20px;
 }
 .menu__list {
   max-height: 300px;
@@ -32,6 +30,7 @@
   flex-direction: column;
   gap: 20px;
   overflow-y: auto;
+  margin-bottom: 36px;
 }
 
 /* scroll style */
@@ -131,8 +130,8 @@
 }
 
 .menu-card {
-  height: 508px;
-  width: 436px;
+  height: 350px;
+  width: 296px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -197,38 +196,80 @@
 .swiper-pagination {
 }
 
-.menu__nav {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-end;
-}
+/* .menu__nav {
+  display: none;
+} */
 
-.swiper-button-prev,
-.swiper-button-next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  padding: 12px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  position: static !important;
-}
+   .menu__nav {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    bottom: -348px;
+  }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: #fff;
-  background-color: #eb0029;
-}
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    position: static !important;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: #fff;
+    background-color: #eb0029;
+  }
 
 @media screen and (min-width: 768px) {
+  .menu__container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
   .menu__list {
     max-height: 574px;
     flex: 0 0 340px;
     gap: 40px;
+    margin-bottom: 0;
   }
-  .menu-card{
+
+  .menu-card {
     border-radius: 50px;
+    height: 508px;
+    width: 436px;
+  }
+
+  .menu__nav {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    bottom: 0;
+    position: relative;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    position: static !important;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: #fff;
+    background-color: #eb0029;
   }
 }
 
