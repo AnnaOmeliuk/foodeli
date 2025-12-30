@@ -281,7 +281,7 @@
     display: flex;
     padding-left: 14px;
   }
-  .hero__customers-item {
+  .customers-item {
     width: 64px;
     height: 64px;
     border-radius: 50%;

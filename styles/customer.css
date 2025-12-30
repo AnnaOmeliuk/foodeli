@@ -1,44 +1,104 @@
 .customers {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .container {
 }
 .customers__image {
-    margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 290px;
+  position: relative;
 }
+.customers__decor-squares {
+  position: relative;
+}
+
+/* Перший квадрат через сам блок */
+.customers__decor-squares {
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #fdd835;
+  top: 22px;
+  rotate: 60deg;
+  left: 92px;
+}
+.customers__decor-squares::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #f2c94c;
+  border-radius: 2px;
+  top: 22px;
+  left: 95px;
+  rotate: 72deg;
+}
+.customers__decor-squares::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #eb0029;
+  border-radius: 2px;
+  top: 120px;
+  right: 10px;
+  rotate: 64deg;
+}
+
 .customers__image-img {
-  max-width: 296px;
+  max-width: 290px;
+}
+.customers__decor {
+  position: absolute;
+}
+.customers__decor--popcorn {
+  top: 108px;
+  left: 6px;
+  max-width: 72px;
+  rotate: 4deg;
+}
+.customers__decor--leaf-1 {
+  top: 16px;
+  right: 42px;
+  max-width: 68px;
+}
+.customers__decor--leaf-2 {
+  top: 20px;
+  right: 8px;
+  max-width: 88px;
+}
+.customers__decor--onion-1 {
+  top: 34px;
+  left: 22px;
+  max-width: 60px;
+}
+.customers__decor--onion-2 {
+  top: 28px;
+  left: 36px;
+  max-width: 66px;
+}
+.review-card {
+}
+.review-card__title {
+}
+.review-card__group {
+}
+.review-card__photo {
+}
+.review-card__value {
 }
 .customers__content {
-
 }
 .customers__subtitle {
-color: #eb0029;
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 .customers__title {
-        font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    max-width: 514px;
-    margin-bottom: 32px;
-
 }
 .customers__text {
-        font-size: 18px;
-    margin-bottom: 24px;
-    line-height: 1.7;
-    color: #333333;
 }
 .customers__review {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
 }
 .customers__review-photo {
 }
@@ -48,7 +108,7 @@ color: #eb0029;
 }
 .customers__review-role {
 }
-.customers__review-rating {
+.rating {
 }
 .fa-solid {
 }
@@ -62,13 +122,16 @@ color: #eb0029;
 }
 .icon-star--inactive {
 }
-.customers__review-rating-value {
+.rating__value {
 }
 
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1024px) {
+  .customers__image-img {
+    max-width: 660px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
