@@ -22,7 +22,7 @@
   height: 8px;
   background-color: #fdd835;
   top: 22px;
-  rotate: 60deg;
+  rotate: -14deg;
   left: 92px;
 }
 .customers__decor-squares::before {
@@ -30,21 +30,21 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #f2c94c;
+  background-color: #eb0029;
   border-radius: 2px;
-  top: 22px;
-  left: 95px;
-  rotate: 72deg;
+  top: 146px;
+  left: 144px;
+  rotate: 80deg;
 }
 .customers__decor-squares::after {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #eb0029;
+  width: 6px;
+  height: 6px;
+  background-color: #f2c94c;
   border-radius: 2px;
-  top: 120px;
-  right: 10px;
+  top: 204px;
+  right: 134px;
   rotate: 64deg;
 }
 
