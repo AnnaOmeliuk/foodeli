@@ -40,8 +40,49 @@
 }
 /* end stars */
 
+
 /* review-card */
+.review-card {
+  display: none;
+    position: absolute;
+    z-index: 1;
+    top: 284px;
+    right: 117px;
+    max-width: 264px;
+    background-color: #fff;
+    padding: 34px 30px 24px 30px;
+    border-radius: 20px;
+}
+.review-card__title {
+  margin-bottom: 16px;
+}
+.review-card__group {
+  display: flex;
+  align-items: center;
+}
+.review-card__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  margin-left: -16px;
+}
+.review-card__value {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eb0029;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -16px;
+}
+/* end review-card */
 @media screen and (min-width: 768px) {
+.review-card {
+  display: block;
+}
 
 }
 
