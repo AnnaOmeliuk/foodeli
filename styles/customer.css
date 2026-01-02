@@ -108,10 +108,31 @@
   line-height: 1.7;
 }
 .customers__review {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
+
 .customers__review-photo {
 }
 .customers__review-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.customers__review-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #eb0029;
 }
 .customers__review-title {
 }
