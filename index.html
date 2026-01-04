@@ -495,83 +495,85 @@
               </div>
             </div>
 
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
           </div>
         </div>
       </section>
 
       <section class="customers container">
-        <div class="customers__image">
-          <span class="customers__decor-squares"></span>
-          <img
-            src="./img/customers/customers-img.png"
-            alt="cook"
-            class="customers__image-img"
-          />
-          <img
-            src="./img/customers/popcorn.png"
-            alt="popcorn"
-            class="customers__decor customers__decor--popcorn"
-          />
-          <img
-            src="./img/customers/leaf-1.png"
-            alt="leaf-1"
-            class="customers__decor customers__decor--leaf-1"
-          />
-          <img
-            src="./img/customers/leaf-2.png"
-            alt="leaf-2"
-            class="customers__decor customers__decor--leaf-2"
-          />
-          <img
-            src="./img/customers/onion-1.png"
-            alt="onion-1"
-            class="customers__decor customers__decor--onion-1"
-          />
-          <img
-            src="./img/customers/onion-2.png"
-            alt="onion-2"
-            class="customers__decor customers__decor--onion-2"
-          />
-        </div>
-
-        <article class="review-card">
-          <h3 class="review-card__title">Our Reviewers</h3>
-          <div class="review-card__group">
+        <div class="customers__container">
+          <div class="customers__image">
+            <span class="customers__decor-squares"></span>
             <img
-              src="/img/hero/user-1.jpg"
-              alt="Photo of Theresa Jordan"
-              class="review-card__photo"
+              src="./img/customers/customers-img.png"
+              alt="cook"
+              class="customers__image-img"
             />
             <img
-              src="/img/hero/user-2.jpg"
-              alt="Photo of Theresa Jordan"
-              class="review-card__photo"
+              src="./img/customers/popcorn.png"
+              alt="popcorn"
+              class="customers__decor customers__decor--popcorn"
             />
             <img
-              src="/img/hero/user-3.jpg"
-              alt="Photo of Theresa Jordan"
-              class="review-card__photo"
+              src="./img/customers/leaf-1.png"
+              alt="leaf-1"
+              class="customers__decor customers__decor--leaf-1"
             />
-            <p class="review-card__value">12k+</p>
+            <img
+              src="./img/customers/leaf-2.png"
+              alt="leaf-2"
+              class="customers__decor customers__decor--leaf-2"
+            />
+            <img
+              src="./img/customers/onion-1.png"
+              alt="onion-1"
+              class="customers__decor customers__decor--onion-1"
+            />
+            <img
+              src="./img/customers/onion-2.png"
+              alt="onion-2"
+              class="customers__decor customers__decor--onion-2"
+            />
           </div>
-        </article>
 
-        <div class="customers__content">
-          <p class="customers__subtitle">WHAT THEY SAY</p>
-          <h2 class="customers__title">What Our Customers Say About Us</h2>
-          <p class="customers__text">
-            “Fudo is the best. Besides the many and delicious meals, the service
-            is also very good, especially in the very fast delivey. I highly
-            recommend Fudo to you”.
-          </p>
+          <article class="review-card">
+            <h3 class="review-card__title">Our Reviewers</h3>
+            <div class="review-card__group">
+              <img
+                src="/img/hero/user-1.jpg"
+                alt="Photo of Theresa Jordan"
+                class="review-card__photo"
+              />
+              <img
+                src="/img/hero/user-2.jpg"
+                alt="Photo of Theresa Jordan"
+                class="review-card__photo"
+              />
+              <img
+                src="/img/hero/user-3.jpg"
+                alt="Photo of Theresa Jordan"
+                class="review-card__photo"
+              />
+              <p class="review-card__value">12k+</p>
+            </div>
+          </article>
+
+          <div class="customers__content">
+            <p class="customers__subtitle">WHAT THEY SAY</p>
+            <h2 class="customers__title">What Our Customers Say About Us</h2>
+            <p class="customers__text">
+              “Fudo is the best. Besides the many and delicious meals, the
+              service is also very good, especially in the very fast delivey. I
+              highly recommend Fudo to you”.
+            </p>
+            <button class="customers__button" type="button">Add review</button>
+          </div>
         </div>
 
+
+        <!-- slider -->
         <div class="customers__review customers__review--slider">
           <div class="customers__review-track swiper-wrapper">
-
+            <!-- slide 1 -->
             <div class="customers__review-slide swiper-slide">
               <article class="customers__review-item">
                 <img
@@ -597,10 +599,11 @@
               </article>
             </div>
 
+            <!-- slide 2 -->
             <div class="customers__review-slide swiper-slide">
               <article class="customers__review-item">
                 <img
-                  src="/img/hero/user-1.jpg"
+                  src="/img/hero/user-2.jpg"
                   alt="Photo of Theresa Jordan"
                   class="customers__review-photo"
                 />
@@ -621,11 +624,88 @@
                 </div>
               </article>
             </div>
-            
+
+            <!-- slide 3 -->
+            <div class="customers__review-slide swiper-slide">
+              <article class="customers__review-item">
+                <img
+                  src="/img/hero/user-3.jpg"
+                  alt="Photo of Theresa Jordan"
+                  class="customers__review-photo"
+                />
+                <div class="customers__review-content">
+                  <h3 class="customers__review-title">Theresa Jordan</h3>
+                  <p class="customers__review-role">Food Enthusiast</p>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i
+                      class="fa-regular fa-star icon-star icon-star--inactive"
+                    ></i>
+                    <span class="rating__value">4.8</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- slide 4 -->
             <div class="customers__review-slide swiper-slide">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-1.jpg"
+                  alt="Photo of Theresa Jordan"
+                  class="customers__review-photo"
+                />
+                <div class="customers__review-content">
+                  <h3 class="customers__review-title">Theresa Jordan</h3>
+                  <p class="customers__review-role">Food Enthusiast</p>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i
+                      class="fa-regular fa-star icon-star icon-star--inactive"
+                    ></i>
+                    <span class="rating__value">4.8</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- slide 5 -->
+            <div class="customers__review-slide swiper-slide">
+              <article class="customers__review-item">
+                <img
+                  src="/img/hero/user-2.jpg"
+                  alt="Photo of Theresa Jordan"
+                  class="customers__review-photo"
+                />
+                <div class="customers__review-content">
+                  <h3 class="customers__review-title">Theresa Jordan</h3>
+                  <p class="customers__review-role">Food Enthusiast</p>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                    <i
+                      class="fa-regular fa-star icon-star icon-star--inactive"
+                    ></i>
+                    <span class="rating__value">4.8</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- slide 4 -->
+            <div class="customers__review-slide swiper-slide">
+              <article class="customers__review-item">
+                <img
+                  src="/img/hero/user-3.jpg"
                   alt="Photo of Theresa Jordan"
                   class="customers__review-photo"
                 />

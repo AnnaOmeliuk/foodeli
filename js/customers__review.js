@@ -3,15 +3,19 @@ const swiper = new Swiper(".customers__review--slider", {
   clickable: true,
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.3,
+    },
+    768:{
+      slidesPerView: 2.5,
+
     },
 
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 35,
     },
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 35,
     },
   },
