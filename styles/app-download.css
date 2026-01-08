@@ -1,0 +1,232 @@
+.app-download {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+}
+.app-download__inner {
+  background-color: rgba(255, 221, 204, 0.25);
+  padding: 120px 84px 0 84px;
+  display: flex;
+  gap: 200px;
+  border-radius: 30px;
+}
+.app-download__content {
+  max-width: 476px;
+}
+.app-download__subtitle {
+  color: #eb0029;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.app-download__title {
+  color: #010f1c;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+.app-download__text {
+  color: #010f1c;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+.app-download__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 50px;
+  background-color: #eb0029;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.6;
+  padding: 22px 44px;
+}
+.app-download__visual {
+    min-width: 336px;
+    background-color: #fff;
+    padding: 56px 36px 0 36px;
+    border-radius: 30px 30px 0 0 ;
+}
+
+*
+.app-download__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.app-download__nav-icon {
+}
+.app-download__nav-icon--logo {
+}
+.app-download__nav-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.app-download__nav-icon--location {
+}
+.app-download__nav-select {
+}
+.app-download__nav-user {
+}
+.app-download__nav-icon--user {
+}
+.app-download__hero {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  background-color: #fee9de;
+  padding: 20px 24px;
+  margin-bottom: 26px;
+}
+.app-download__hero-cta {
+  max-width: 120px;
+}
+.app-download__hero-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  margin-bottom: 14px;
+}
+.app-download__hero-title--accent {
+  color: #eb0029;
+}
+.app-download__hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 50px;
+  background-color: #eb0029;
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 0;
+  line-height: 1.6;
+  padding: 10px 14px;
+    pointer-events: none;
+  cursor: default;
+}
+.app-download__hero-img {
+  width: 200px;
+  top: 0;
+  position: absolute;
+  left: 42%;
+}
+.app-download__categories {
+}
+.app-download__categories-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  margin-bottom: 14px;
+}
+.menu {
+}
+.menu--compact {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.menu .menu--compact{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu--compact .menu__list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+
+}
+.menu__item {
+}
+.menu--compact .menu__link {
+  padding: 10px 20px 10px 10px;
+  gap: 0px;
+  pointer-events: none;
+  justify-content: space-between;
+  cursor: default;
+}
+.menu--compact .menu__link--active{
+  background-color: #eb0029;
+  color: #fff;
+}
+.menu--compact .menu__icon-wrap::after{
+  opacity: 1;
+    transform: scale(1);
+}
+.menu--compact .menu__link--inactive{
+  background-color: #e0e0e0;
+  color: #010f1c;
+}
+.menu--compact .menu__icon-wrap {
+  width: auto;
+  height: auto;
+}
+.menu--compact .menu__icon {
+  width: 30px;
+  height: 30px;
+}
+.menu--compact .menu__item{
+  min-width: 120px;
+}
+.menu--compact .menu__item-name {
+  font-size: 12px;
+}
+.app-download__popular {
+}
+.app-download__popular-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.app-download__popular-title {
+  font-size: 16px;
+}
+.app-download__popular-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #f2c84b;
+  max-width: 72px;
+  font-size: 13px;
+      pointer-events: none;
+  cursor: default;
+}
+.app-download__popular-btn-icon {
+  width: 16px;
+  height: 16px;
+}
+.app-download__popular-btn-icon-svg {
+}
+.app-download__popular-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.app-download__popular-item {
+}
+.app-download__popular-img{
+  width: 174px;
+
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
