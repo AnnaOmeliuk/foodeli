@@ -50,14 +50,13 @@
   padding: 22px 44px;
 }
 .app-download__visual {
-    min-width: 336px;
-    background-color: #fff;
-    padding: 56px 36px 0 36px;
-    border-radius: 30px 30px 0 0 ;
+  min-width: 336px;
+  background-color: #fff;
+  padding: 56px 36px 0 36px;
+  border-radius: 30px 30px 0 0;
 }
 
-*
-.app-download__nav {
+* .app-download__nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
@@ -112,7 +111,7 @@
   margin-bottom: 0;
   line-height: 1.6;
   padding: 10px 14px;
-    pointer-events: none;
+  pointer-events: none;
   cursor: default;
 }
 .app-download__hero-img {
@@ -137,7 +136,7 @@
   padding-top: 42px;
   padding-bottom: 42px;
 }
-.menu .menu--compact{
+.menu .menu--compact {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -146,7 +145,6 @@
   flex-direction: row;
   position: absolute;
   top: 0;
-
 }
 .menu__item {
 }
@@ -157,15 +155,15 @@
   justify-content: space-between;
   cursor: default;
 }
-.menu--compact .menu__link--active{
+.menu--compact .menu__link--active {
   background-color: #eb0029;
   color: #fff;
 }
-.menu--compact .menu__icon-wrap::after{
+.menu--compact .menu__icon-wrap::after {
   opacity: 1;
-    transform: scale(1);
+  transform: scale(1);
 }
-.menu--compact .menu__link--inactive{
+.menu--compact .menu__link--inactive {
   background-color: #e0e0e0;
   color: #010f1c;
 }
@@ -177,7 +175,7 @@
   width: 30px;
   height: 30px;
 }
-.menu--compact .menu__item{
+.menu--compact .menu__item {
   min-width: 120px;
 }
 .menu--compact .menu__item-name {
@@ -201,7 +199,7 @@
   color: #f2c84b;
   max-width: 72px;
   font-size: 13px;
-      pointer-events: none;
+  pointer-events: none;
   cursor: default;
 }
 .app-download__popular-btn-icon {
@@ -211,15 +209,14 @@
 .app-download__popular-btn-icon-svg {
 }
 .app-download__popular-list {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .app-download__popular-item {
 }
-.app-download__popular-img{
+.app-download__popular-img {
   width: 174px;
-
 }
 
 @media screen and (min-width: 768px) {
