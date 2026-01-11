@@ -56,7 +56,10 @@
 .footer__item--title {
 }
 .footer__title {
-  /* margin-bottom: 25px; */
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 600;
 }
 .footer__link {
 }
