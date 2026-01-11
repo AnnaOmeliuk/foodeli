@@ -2,32 +2,33 @@
 }
 .container {
 }
-.footer__container{
-    display: flex;
-    justify-content: space-between;
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .footer__social-info {
-    max-width: 292px;
+  max-width: 292px;
+  margin-bottom: 44px;
 }
 .nav__logo {
 }
 .nav__logo-link {
 }
-.nav__logo--footer .nav__logo-link{
-justify-content: start;
-margin-bottom: 32px;
+.nav__logo--footer .nav__logo-link {
+  justify-content: start;
+  margin-bottom: 32px;
 }
 .nav__logo-icon {
 }
 .nav__logo-title {
 }
 .footer__text {
-    margin-bottom: 44px;
-    
+  margin-bottom: 44px;
 }
 .socials {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 .socials__link {
 }
@@ -40,21 +41,22 @@ margin-bottom: 32px;
 .socials__icon--twitter {
 }
 .footer__list-container {
-    display: flex;
-    gap: 70px;
-    margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 44px;
 }
 .footer__list {
 }
 .footer__list--about {
 }
 .footer__item {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .footer__item--title {
 }
 .footer__title {
-    margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 .footer__link {
 }
@@ -64,29 +66,106 @@ margin-bottom: 32px;
 }
 .footer__list--qa {
 }
-.footer__item--btn{
-    margin-bottom: 33px;
+.footer__item--btn {
+  margin-bottom: 33px;
 }
 .footer__link--btn {
-    border-radius: 60px;
-    border: 1px solid #e0e0e0;
-    padding: 14px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 23px;
-    line-height: 1.4;
+  border-radius: 60px;
+  border: 1px solid #e0e0e0;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  line-height: 1.4;
 }
 .footer__link-icon {
 }
 
-@media screen and (min-width: 768px) {
+/* footer__accordion */
+.footer__accordion-content {
+  display: none;
+}
 
+.footer__list.is-open .footer__accordion-content {
+  display: block;
+}
+
+.footer__accordion-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer__arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg); /* стрілка вниз */
+  transition: transform 0.3s ease;
+}
+
+/* коли список відкритий */
+.footer__list.is-open .footer__arrow {
+  transform: rotate(-135deg); /* стрілка вверх */
+}
+
+.footer__accordion-content {
+  display: none;
+}
+
+.footer__list.is-open .footer__accordion-content {
+  display: block;
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    gap: 36px;
+  }
+  .footer__list-container {
+    flex-direction: row;
+    gap: 36px;
+  }
+  .footer__social-info {
+    margin-bottom: 0px;
+    max-width: 256px;
+  }
+  
+  .footer__btn-address{
+    display: none;
+  }
+
+  /* footer__accordion */
+  .footer__accordion-content {
+    display: block;
+  }
+
+  .footer__accordion-btn {
+    pointer-events: none;
+  }
+  .footer__arrow{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .footer__list-container {
+    gap: 70px;
+  }
+    .footer__btn-address{
+    display: inline;
+  }
 
 }
 
 @media screen and (min-width: 1440px) {
+
 }
