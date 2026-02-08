@@ -7,6 +7,32 @@
 @import "./styles/customer.css";
 @import "./styles/app-download.css";
 @import "./styles/footer.css";
+@import "./styles/animations.css";
+
+
+
+/* анімований градієнт що рухаєтся по колу
+ */
+/* @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.element{
+    height: 400px;
+    width: 400px;
+    background-image: conic-gradient(from var(--angle), red, blue, red);
+    animation: 1s spin linear infinite;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg
+    }
+} */
 
 
 

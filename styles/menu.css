@@ -1,12 +1,13 @@
 .menu {
   padding-top: 80px;
   padding-bottom: 80px;
+  position: relative;
 }
 .container {
 }
 .menu__info {
   margin-bottom: 20px;
-  position: relative;
+  /* position: relative; */
 }
 .menu__subtitle {
   color: #eb0029;
@@ -19,7 +20,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  max-width: 514px;
+  max-width: 388px;
 }
 .menu__container {
 }
@@ -27,10 +28,8 @@
   max-height: 300px;
   display: flex;
   flex: 0 0 300px;
-  flex-direction: column;
   gap: 20px;
   overflow-y: auto;
-  margin-bottom: 36px;
 }
 
 /* scroll style */
@@ -123,10 +122,17 @@
   flex: 1;
   min-width: 0;
 }
+
+.menu__item-swiper {
+  padding: 46px 0 0 0;
+}
+
 .swiper-wrapper {
   display: flex;
 }
 .swiper-slide {
+  display: flex;
+  justify-content: center;
 }
 
 .menu-card {
@@ -200,44 +206,45 @@
   display: none;
 } */
 
-   .menu__nav {
-    position: absolute;
-    display: flex;
-    gap: 16px;
-    justify-content: flex-end;
-    bottom: -348px;
-  }
+.menu__nav {
+  top: 392px;
+  right: 0;
+  position: absolute;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    padding: 12px;
-    background-color: #e0e0e0;
-    border-radius: 50%;
-    position: static !important;
-  }
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  padding: 12px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  position: static !important;
+}
 
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    color: #fff;
-    background-color: #eb0029;
-  }
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #fff;
+  background-color: #eb0029;
+}
 
 @media screen and (min-width: 768px) {
   .menu__container {
     display: flex;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .menu__list {
     max-height: 574px;
     flex: 0 0 340px;
     gap: 40px;
-    margin-bottom: 0;
+    flex-direction: column;
   }
 
   .menu-card {
@@ -247,11 +254,12 @@
   }
 
   .menu__nav {
-    display: flex;
-    gap: 16px;
-    justify-content: flex-end;
-    bottom: 0;
-    position: relative;
+    top: 186px;
+    right: 20px;
+  }
+
+  .menu__title {
+    max-width: 456px;
   }
 
   .swiper-button-prev,
@@ -270,6 +278,9 @@
   .swiper-button-next:hover {
     color: #fff;
     background-color: #eb0029;
+  }
+  .menu__item-swiper {
+    padding: 0;
   }
 }
 
@@ -295,4 +306,13 @@
     gap: 40px;
     padding: 24px;
   }
+
+  .menu__nav {
+    top: 206px;
+  }
+
+  .swiper-slide {
+  justify-content: start;
+}
+
 }

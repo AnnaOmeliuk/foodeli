@@ -51,10 +51,6 @@ a {
 }
 
 select {
-  /* appearance: none; */
-  /* -webkit-appearance: none; */
-  /* -moz-appearance: none; */
-
   background: none;
   border: none;
   outline: none;
@@ -63,4 +59,66 @@ select {
   margin: 0;
   font: inherit;
   color: inherit;
+}
+
+/* анімації при скролі */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* анімації кнопок */
+.btn {
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+/* анімації іконок */
+
+.nav__actions-item:hover {
+  transform: scale(1.2);
+}
+
+.hero__image-action-icon--phone {
+  position: relative;
+  animation: phonemove 1s infinite;
+}
+@keyframes phonemove {
+  0% {
+    rotate: 0deg;
+    /* scale: 1; */
+  }
+  50% {
+    rotate: 30deg;
+    /* scale: 1.2; */
+  }
+  100% {
+    rotate: 0deg;
+    /* scale: 1; */
+  }
+}
+
+.socials__icon {
+  transition: 0.3s ease;
+}
+
+.socials__link:hover .socials__icon {
+  transform: scale(1.2) rotate(5deg);
+}
+/* анімації посилань */
+.link {
+  transition: 0.3s ease;
+}
+.link:hover,
+.link:focus {
+  color: #eb0029;
 }

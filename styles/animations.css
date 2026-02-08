@@ -1,0 +1,90 @@
+/* анімації при скролі */
+/* .animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* stagger animation */
+.feature-card {
+  opacity: 0;
+  transform: translateY(30px);
+  /* transform: translateX(30px); */
+  transition: 0.8s ease;
+}
+
+.feature-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* transform: translateX(0); */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Stagger зі scale (ефект “pop”) */
+.card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+/* -------------------------------------------------------------------------- */
+
+/* Stagger з blur (дуже premium ✨) */
+/* .card {
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(8px);
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+}
+
+.card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+} */
+/* -------------------------------------------------------------------------- */
+
+/* html для анімації
+<div class="cards animate-stagger">
+  <div class="card">One</div>
+  <div class="card">Two</div>
+  <div class="card">Three</div>
+</div>
+*/
+/* -------------------------------------------------------------------------- */
+
+
+/* js для анімації 
+const staggerContainers = document.querySelectorAll(".animate-stagger");
+
+const staggerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const items = entry.target.children;
+
+      [...items].forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("is-visible");
+        }, index * 150);
+      });
+
+      staggerObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+staggerContainers.forEach(container =>
+  staggerObserver.observe(container)
+);
+
+*/
+/* -------------------------------------------------------------------------- */

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,8 +20,8 @@
   <body>
     <header>
       <div class="container">
-        <nav class="nav">
-          <div class="nav__logo">
+        <nav class="animate-stagger nav">
+          <div class="feature-card nav__logo">
             <a href="" class="nav__logo-link">
               <svg class="nav__logo-icon" width="45" height="45">
                 <use xlink:href="./svg/logo.svg"></use>
@@ -30,33 +30,37 @@
             </a>
           </div>
 
-          <div class="nav__menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#hero" class="nav__link">Why Foodeli?</a>
+          <div class="feature-card nav__menu">
+            <ul class="nav__list animate-stagger">
+
+              <li class="nav__item card">
+                <a href="#services" class="link nav__link">Services</a>
               </li>
-              <li class="nav__item">
-                <a href="#services" class="nav__link">Services</a>
+              <li class="nav__item card">
+                <a href="#menu" class="link nav__link">Menu</a>
               </li>
-              <li class="nav__item">
-                <a href="#menu" class="nav__link">Menu</a>
+              <li class="nav__item card">
+                <a href="#customers" class="link nav__link">Reviewers</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
+              <li class="nav__item card">
+                <a href="#app-download" class="link nav__link">Download app</a>
               </li>
             </ul>
           </div>
 
-          <div class="nav__actions">
-            <a href="" class="nav__actions-item">
+          <div class="feature-card nav__actions">
+            <a href="" class="link nav__actions-item">
               <i class="fa-solid fa-magnifying-glass nav__icon"></i>
             </a>
 
-            <a href="" class="nav__actions-item">
+            <a href="" class="link nav__actions-item">
               <i class="fa-solid fa-basket-shopping nav__icon"></i>
             </a>
 
-            <button type="button" class="nav__button nav__button--login">
+            <button
+              type="button"
+              class="btn nav__button nav__button--login border-animation"
+            >
               <i
                 class="fa-solid fa-right-to-bracket nav__icon nav__icon--login"
               ></i>
@@ -64,7 +68,7 @@
             </button>
           </div>
 
-          <div class="nav__burger">
+          <div class="feature-card nav__burger">
             <i class="fa-solid fa-bars nav__burger-icon"></i>
           </div>
         </nav>
@@ -72,156 +76,168 @@
     </header>
 
     <main>
-      <section class="hero container" id="hero">
+      <section class="animate-stagger container" id="hero">
         <!-- left part -->
-        <div class="hero__content">
-          <button class="hero__button">
-            More than Faster
-            <svg class="hero__svg">
-              <use xlink:href="./svg/сherry.svg"></use>
-            </svg>
-          </button>
+        <div class="feature-card hero">
+          <div class="hero__content">
+            <button class="btn hero__button">
+              More than Faster
+              <svg class="hero__svg">
+                <use xlink:href="./svg/сherry.svg"></use>
+              </svg>
+            </button>
 
-          <h1 class="hero__title">
-            Claim Best Offer on Fast
-            <span class="hero__title--accent">Food</span> &
-            <span class="hero__title--accent">Restaurants</span>
-          </h1>
-          <p class="hero__subtitle">
-            Our job is to filling your tummy with delicious food and with fast
-            and free delivery
-          </p>
-          <div class="hero__buttons">
-            <button class="hero__button hero__button--start" type="button">
-              Get Started
-            </button>
-            <button class="hero__button hero__button--video" type="button">
-              <span class="hero__button-icon"
-                ><i class="fa-solid fa-play"></i
-              ></span>
-              Watch Video
-            </button>
-          </div>
-          <!-- customers -->
-          <div class="hero__customers">
-            <div class="hero__customers-list">
-              <img
-                src="/img/hero/user-1.jpg"
-                alt="customer 1"
-                class="customers__reviewer-photo"
-              />
-              <img
-                src="/img/hero/user-2.jpg"
-                alt="customer 2"
-                class="customers__reviewer-photo"
-              />
-              <img
-                src="/img/hero/user-3.jpg"
-                alt="customer 3"
-                class="customers__reviewer-photo"
-              />
+            <h1 class="hero__title">
+              Claim Best Offer on Fast
+              <span class="hero__title--accent">Food</span> &
+              <span class="hero__title--accent">Restaurants</span>
+            </h1>
+            <p class="hero__subtitle">
+              Our job is to filling your tummy with delicious food and with fast
+              and free delivery
+            </p>
+            <div class="hero__buttons">
+              <button
+                class="btn hero__button hero__button--start border-animation"
+                type="button"
+              >
+                Get Started
+              </button>
+              <button
+                class="btn hero__button hero__button--video"
+                type="button"
+                popovertarget="video"
+              >
+                <span class="hero__button-icon"
+                  ><i class="fa-solid fa-play"></i
+                ></span>
+                Watch Video
+              </button>
+              <div id="video" popover="">VIDEO</div>
             </div>
-            <div class="hero__customers-info">
-              <h3 class="hero__customers-title">Our Happy Customer</h3>
-              <div class="hero__customers-rating">
-                <i class="fa-solid fa-star icon-star icon-star--active"></i>
-                <p class="hero__customers-rating-value">
-                  4,8<span
-                    class="hero__customers-rating-value hero__customers-rating-value--overview"
-                    >(12.5k Review)</span
-                  >
+            <!-- customers -->
+            <div class="hero__customers">
+              <div class="hero__customers-list">
+                <img
+                  src="/img/hero/user-1.jpg"
+                  alt="customer 1"
+                  class="customers__reviewer-photo"
+                />
+                <img
+                  src="/img/hero/user-2.jpg"
+                  alt="customer 2"
+                  class="customers__reviewer-photo"
+                />
+                <img
+                  src="/img/hero/user-3.jpg"
+                  alt="customer 3"
+                  class="customers__reviewer-photo"
+                />
+              </div>
+              <div class="hero__customers-info">
+                <h3 class="hero__customers-title">Our Happy Customer</h3>
+                <div class="hero__customers-rating">
+                  <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                  <p class="hero__customers-rating-value">
+                    4,8<span
+                      class="hero__customers-rating-value hero__customers-rating-value--overview"
+                      >(12.5k Review)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end-customers -->
+          </div>
+          <!-- right part -->
+          <div class="hero__image">
+            <span class="hero__image-icon hero__image-icon--clock">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+            <span class="hero__image-icon hero__image-icon--fire">
+              <svg>
+                <use xlink:href="./svg/fire.svg"></use>
+              </svg>
+            </span>
+            <span class="hero__image-icon hero__image-icon--arrow">
+              <svg>
+                <use xlink:href="./svg/arrow.svg"></use>
+              </svg>
+            </span>
+
+            <div class="hero__image-action">
+              <span
+                class="hero__image-action-icon hero__image-action-icon--user"
+              >
+                <svg class="hero__image-action-icon-svg">
+                  <use xlink:href="./svg/avatar.svg"></use>
+                </svg>
+              </span>
+              <div class="hero__image-action-info">
+                <h3 class="hero__image-action-title">Richard Watson</h3>
+                <p class="hero__image-action-subtitle">Food Courier</p>
+              </div>
+              <button
+                type="button"
+                class="hero__image-action-icon hero__image-action-icon--phone"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </button>
+            </div>
+
+            <div class="hero__image-rating">
+              <img
+                src="/img/hero/italian-pizza.jpg"
+                alt="italian-pizza"
+                class="hero__image-rating-img"
+              />
+              <div class="hero__image-info">
+                <h3 class="hero__image-info-title">Italian Pizza</h3>
+                <ul class="hero__image-info-list">
+                  <li class="hero__image-info-item">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                  </li>
+                  <li class="hero__image-info-item">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                  </li>
+                  <li class="hero__image-info-item">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                  </li>
+                  <li class="hero__image-info-item">
+                    <i class="fa-solid fa-star icon-star icon-star--active"></i>
+                  </li>
+                  <li class="hero__image-info-item">
+                    <i
+                      class="fa-regular fa-star icon-star icon-star--inactive"
+                    ></i>
+                  </li>
+                </ul>
+
+                <p class="hero__image-info-price">
+                  <span
+                    class="hero__image-info-price hero__image-info-price--accent"
+                    >$</span
+                  >7.49
                 </p>
               </div>
             </div>
-          </div>
-          <!-- end-customers -->
-        </div>
-        <!-- right part -->
-        <div class="hero__image">
-          <span class="hero__image-icon hero__image-icon--clock">
-            <i class="fa-regular fa-clock"></i>
-          </span>
-          <span class="hero__image-icon hero__image-icon--fire">
-            <svg>
-              <use xlink:href="./svg/fire.svg"></use>
-            </svg>
-          </span>
-          <span class="hero__image-icon hero__image-icon--arrow">
-            <svg>
-              <use xlink:href="./svg/arrow.svg"></use>
-            </svg>
-          </span>
 
-          <div class="hero__image-action">
-            <span class="hero__image-action-icon hero__image-action-icon--user">
-              <svg class="hero__image-action-icon-svg">
-                <use xlink:href="./svg/avatar.svg"></use>
-              </svg>
-            </span>
-            <div class="hero__image-action-info">
-              <h3 class="hero__image-action-title">Richard Watson</h3>
-              <p class="hero__image-action-subtitle">Food Courier</p>
-            </div>
-            <button
-              type="button"
-              class="hero__image-action-icon hero__image-action-icon--phone"
-            >
-              <i class="fa-solid fa-phone"></i>
-            </button>
-          </div>
-
-          <div class="hero__image-rating">
             <img
-              src="/img/hero/italian-pizza.jpg"
-              alt="italian-pizza"
-              class="hero__image-rating-img"
+              src="./img/hero/hero-img.png"
+              alt="plate-1"
+              class="hero__image-img"
             />
-            <div class="hero__image-info">
-              <h3 class="hero__image-info-title">Italian Pizza</h3>
-              <ul class="hero__image-info-list">
-                <li class="hero__image-info-item">
-                  <i class="fa-solid fa-star icon-star icon-star--active"></i>
-                </li>
-                <li class="hero__image-info-item">
-                  <i class="fa-solid fa-star icon-star icon-star--active"></i>
-                </li>
-                <li class="hero__image-info-item">
-                  <i class="fa-solid fa-star icon-star icon-star--active"></i>
-                </li>
-                <li class="hero__image-info-item">
-                  <i class="fa-solid fa-star icon-star icon-star--active"></i>
-                </li>
-                <li class="hero__image-info-item">
-                  <i
-                    class="fa-regular fa-star icon-star icon-star--inactive"
-                  ></i>
-                </li>
-              </ul>
-
-              <p class="hero__image-info-price">
-                <span
-                  class="hero__image-info-price hero__image-info-price--accent"
-                  >$</span
-                >7.49
-              </p>
-            </div>
           </div>
-
-          <img
-            src="./img/hero/hero-img.png"
-            alt="plate-1"
-            class="hero__image-img"
-          />
         </div>
       </section>
 
-      <section class="services container" id="services">
-        <div class="services__info">
+      <section class="animate-stagger services container" id="services">
+        <div class="feature-card services__info">
           <p class="services__subtitle">WHAT WE SERVE</p>
           <h2 class="services__title">Your Favourite Food Delivery Partner</h2>
         </div>
-        <ul class="services__list">
-          <li class="services__item">
+        <ul class="feature-card services__list animate-stagger">
+          <li class="services__item card">
             <img
               src="./img/services/easy-to-order-image.jpg"
               alt="Easy To Order"
@@ -232,7 +248,7 @@
               You only need a few steps in ordering food
             </p>
           </li>
-          <li class="services__item">
+          <li class="services__item card">
             <img
               src="./img/services/fastest-delivery-image.jpg"
               alt="Fastest Delivery"
@@ -243,7 +259,7 @@
               Delivery that is always ontime even faster
             </p>
           </li>
-          <li class="services__item">
+          <li class="services__item card">
             <img
               src="./img/services/best-quality-image.jpg"
               alt="Best Quality"
@@ -257,20 +273,20 @@
         </ul>
       </section>
 
-      <section class="menu container" id="menu">
-        <div class="menu__info">
+      <section class="animate-stagger menu container" id="menu">
+        <div class="feature-card menu__info">
           <p class="menu__subtitle">OUR MENU</p>
           <h2 class="menu__title">Menu That Always Makes You Fall In Love</h2>
 
-          <div class="menu__nav">
+          <!-- <div class="menu__nav">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          </div>
+          </div> -->
         </div>
 
-        <div class="menu__container">
-          <ul class="menu__list">
-            <li class="menu__item">
+        <div class="feature-card menu__container">
+          <ul class="menu__list animate-stagger">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -280,7 +296,7 @@
                 <p class="menu__item-name">Burger</p>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -290,7 +306,7 @@
                 <p class="menu__item-name">Pizza</p>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -300,7 +316,7 @@
                 <p class="menu__item-name">Sushi</p>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -310,7 +326,7 @@
                 <p class="menu__item-name">Pasta</p>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -321,7 +337,7 @@
               </a>
             </li>
 
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -332,7 +348,7 @@
               </a>
             </li>
 
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -342,7 +358,7 @@
                 <p class="menu__item-name">Cupcake</p>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item card">
               <a href="" class="menu__link">
                 <span class="menu__icon-wrap">
                   <svg class="menu__icon">
@@ -354,9 +370,9 @@
             </li>
           </ul>
 
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" lazy="true">
+          <div class="swiper menu__item-swiper">
+            <div class="swiper-wrapper menu__item-swiper-wrapper">
+              <div class="swiper-slide menu__item-swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-1.jpg"
@@ -369,7 +385,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -379,7 +395,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" lazy="true">
+              <div class="swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-2.jpg"
@@ -392,7 +408,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -402,7 +418,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" lazy="true">
+              <div class="swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-3.jpg"
@@ -415,7 +431,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -425,7 +441,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" lazy="true">
+              <div class="swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-4.jpg"
@@ -438,7 +454,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -448,7 +464,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" lazy="true">
+              <div class="swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-5.jpg"
@@ -461,7 +477,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -471,7 +487,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" lazy="true">
+              <div class="swiper-slide">
                 <div class="menu-card">
                   <img
                     src="./img/menu/pizza/pizza-6.jpg"
@@ -484,7 +500,7 @@
                     <p class="menu-card__price">
                       <span class="menu-card__price-currency">$</span>7.49
                     </p>
-                    <button class="menu-card__action">
+                    <button class="btn menu-card__action">
                       Order Now
                       <i
                         class="fa-solid fa-angle-right menu-card__action-icon"
@@ -494,12 +510,17 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+                  <div class="menu__nav">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
       </section>
 
-      <section class="customers container" id="customers">
-        <div class="customers__container">
+      <section class="animate-stagger customers container" id="customers">
+        <div class="feature-card customers__container">
           <div class="customers__image">
             <span class="customers__decor-squares"></span>
             <img
@@ -564,15 +585,20 @@
               service is also very good, especially in the very fast delivey. I
               highly recommend Fudo to you”.
             </p>
-            <button class="customers__button" type="button">Add review</button>
+            <button
+              class="btn customers__button border-animation"
+              type="button"
+            >
+              Add review
+            </button>
           </div>
         </div>
 
         <!-- slider -->
-        <div class="customers__review customers__review--slider">
-          <div class="customers__review-track swiper-wrapper">
+        <div class="feature-card customers__review customers__review--slider">
+          <div class="customers__review-track swiper-wrapper animate-stagger">
             <!-- slide 1 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-1.jpg"
@@ -598,7 +624,7 @@
             </div>
 
             <!-- slide 2 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-2.jpg"
@@ -624,7 +650,7 @@
             </div>
 
             <!-- slide 3 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-3.jpg"
@@ -650,7 +676,7 @@
             </div>
 
             <!-- slide 4 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-1.jpg"
@@ -675,7 +701,7 @@
               </article>
             </div>
             <!-- slide 5 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-2.jpg"
@@ -700,7 +726,7 @@
               </article>
             </div>
             <!-- slide 4 -->
-            <div class="customers__review-slide swiper-slide">
+            <div class="customers__review-slide swiper-slide card">
               <article class="customers__review-item">
                 <img
                   src="/img/hero/user-3.jpg"
@@ -729,8 +755,8 @@
         </div>
       </section>
 
-      <section class="app-download" id="app-download">
-        <div class="container">
+      <section class="animate-stagger app-download" id="app-download">
+        <div class="container feature-card">
           <div class="app-download__inner">
             <div class="app-download__content">
               <p class="app-download__subtitle">DOWNLOAD APP</p>
@@ -739,7 +765,9 @@
                 Discover food wherever and whenever and get your food delivered
                 quickly.
               </p>
-              <button class="app-download__btn">Get The App</button>
+              <button class="btn app-download__btn border-animation">
+                Get The App
+              </button>
             </div>
 
             <div class="app-download__visual">
@@ -782,7 +810,7 @@
                       >Food</span
                     >
                   </h3>
-                  <button class="app-download__hero-btn">Order Now</button>
+                  <button class="btn app-download__hero-btn">Order Now</button>
                 </div>
                 <img
                   src="/img/app-download/app-download-hero-img.png"
@@ -871,7 +899,7 @@
       </section>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="animate-stagger footer" id="footer">
       <div class="container footer__container">
         <div class="footer__social-info">
           <div class="nav__logo nav__logo--footer">
@@ -935,86 +963,88 @@
         <div class="footer__list-container">
           <ul class="footer__list footer__list--about">
             <li class="footer__item footer__item--title">
-              <button class="footer__accordion-btn">
+              <button class=" footer__accordion-btn">
                 <span class="footer__title">About</span>
                 <span class="footer__arrow"></span>
               </button>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">About Us</a>
+              <a href="" class="link footer__link">About Us</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Features</a>
+              <a href="" class="link footer__link">Features</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">News</a>
+              <a href="" class="link footer__link">News</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Menu</a>
+              <a href="" class="link footer__link">Menu</a>
             </li>
           </ul>
 
           <ul class="footer__list footer__list--company">
             <li class="footer__item footer__item--title">
-              <button class="footer__accordion-btn">
+              <button class=" footer__accordion-btn">
                 <span class="footer__title">Company</span>
                 <span class="footer__arrow"></span>
               </button>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Why Foodeli?</a>
+              <a href="" class="link footer__link">Why Foodeli?</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Partner With Us</a>
+              <a href="" class="link footer__link">Partner With Us</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">FAQ</a>
+              <a href="" class="link footer__link">FAQ</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Blog</a>
+              <a href="" class="link footer__link">Blog</a>
             </li>
           </ul>
 
           <ul class="footer__list footer__list--support">
             <li class="footer__item footer__item--title">
-              <button class="footer__accordion-btn">
+              <button class=" footer__accordion-btn">
                 <span class="footer__title">Support</span>
                 <span class="footer__arrow"></span>
               </button>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Account</a>
+              <a href="" class="link footer__link">Account</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Support Center</a>
+              <a href="" class="link footer__link">Support Center</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Feedback</a>
+              <a href="" class="link footer__link">Feedback</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Contact Us</a>
+              <a href="" class="link footer__link">Contact Us</a>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Accessibilty</a>
+              <a href="" class="link footer__link">Accessibilty</a>
             </li>
           </ul>
           <ul class="footer__list footer__list--qa">
             <li class="footer__item footer__item--title">
-              <button class="footer__accordion-btn">
+              <button class=" footer__accordion-btn">
                 <span class="footer__title">Get in Touch</span>
                 <span class="footer__arrow"></span>
               </button>
             </li>
             <li class="footer__item footer__accordion-content">
-              <a href="" class="footer__link">Question or feedback?</a>
+              <a href="" class="link footer__link">Question or feedback?</a>
             </li>
             <li
               class="footer__item footer__accordion-content footer__item--btn"
             >
-              <a href="" class="footer__link">We’d love to hear from you</a>
+              <a href="" class="link footer__link"
+                >We’d love to hear from you</a
+              >
             </li>
             <li class="footer__item footer__accordion-content">
-              <button class="footer__link--btn">
+              <button class="btn footer__link footer__link--btn">
                 <span class="footer__btn-text">
                   <span class="footer__btn-email">Email</span>
                   <span class="footer__btn-address">Address</span>
